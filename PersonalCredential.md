@@ -77,7 +77,7 @@ DHS utilizes the W3C Decentralized Identifier (DID) standard, and its implementa
 - We are currently evaluating various options that utilize existing technologies and standards to demonstrate this linkage without requiring changes to certificate authority governance, browser technology and trust store
 - governance processes
 
-#### 1.1.6. Issuance Protocol - TBD
+#### 1.1.6. Issuance Protocol (TBD)
 
 - DHS hopes to support multiple issuance protocols
 - Issuance protocol SHALL:
