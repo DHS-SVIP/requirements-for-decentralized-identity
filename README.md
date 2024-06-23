@@ -58,7 +58,7 @@ The requirements span the use of personal credentials for both in-person and onl
         - Exchange Protocol (TBD)
     - Normative References
 
-- [Supply Chain Organizational Credential](OrganizationalCredential.md)
+- [Organization (Supply Chain) Credential](OrganizationCredential.md)
     - CBP/Trade Issuer
         - Credential Formats & Digital Signatures
         - Metadata & Vocabulary
