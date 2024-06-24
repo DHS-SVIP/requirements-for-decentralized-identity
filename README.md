@@ -25,11 +25,9 @@ The requirements on the following pages adopt and use the following ISO document
 
 ## Scope of Requirements
 
-The requirements span the use of personal credentials for both in-person and online usage scenarios, and the use of supply chain organizational credentials for online usage.
+The requirements span the use of personal credentials for both in-person and online usage scenarios, and the use of supply chain organization credentials for online usage scenarios.
 
 ![Requirements for Personal and Supply Chain Credentials](/img/Requirements-Personal-SupplyChain.png)
-
-## Table of Contents
 
 - [Personal Credential](PersonalCredential.md)
     - Implementation Principles

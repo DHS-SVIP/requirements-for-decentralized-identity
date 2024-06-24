@@ -74,8 +74,7 @@ DHS utilizes the W3C Decentralized Identifier (DID) standard, and its implementa
 - Only verified U.S. Government organizations can register and operate a .gov domain; registration is free to verified USG organizations
     - https://get.gov/domains/eligibility/
 - An entity can gain high assurance that a credential is issued or is being verified by a specific USG organization by digitally verifying a cryptographic link between the USG organization’s did:web identifier and its .gov domain
-- We are currently evaluating various options that utilize existing technologies and standards to demonstrate this linkage without requiring changes to certificate authority governance, browser technology and trust store
-- governance processes
+- We are currently evaluating various options that utilize existing technologies and standards to demonstrate this linkage without requiring changes to certificate authority governance, browser technology and trust store governance processes
 
 #### 1.1.6. Issuance Protocol (TBD)
 
