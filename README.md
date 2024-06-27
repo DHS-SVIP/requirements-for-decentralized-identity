@@ -1,4 +1,3 @@
-
 # DHS Technical Implementation Requirements for Decentralized Identity
 
 These technical implementation requirements have been chosen to meet the operational needs of U.S. Citizenship and Immigration Services, U.S. Customs and Border Protection and the DHS Privacy Office for implementing digital credentialing capabilities relevant to:
@@ -29,43 +28,43 @@ The requirements span the use of personal credentials for both in-person and onl
 
 ![Requirements for Personal and Supply Chain Credentials](/img/Requirements-Personal-SupplyChain.png)
 
-- [Personal Credential](PersonalCredential.md)
-    - Implementation Principles
-    - Distribution and Retrieval of DHS Public Key
-    - Personal Credential Use (In Person)
-    - Personal Credential Use (Online)
-    - DHS Personal Credential Issuer
-        - Accessibility & Openness
-        - Platform & Software Security
-        - Credential Formats & Digital Signatures
-        - Metadata & Vocabulary
-        - .gov Binding (TBD)
-        - Issuance Protocol (TBD)
-    - DHS Personal Credential Verifier
-        - Accessibility & Openness
-        - Platform & Software Security
-        - Credential Formats & Digital Signatures
-        - Metadata & Vocabulary
-        - .gov Binding (TBD)
-        - Exchange Protocol (TBD)
-    - DHS Personal Credential Holder (Digital Wallet)
-        - Accessibility & Openness
-        - Platform & Software Security
-        - Credential Formats & Digital Signatures
-        - Issuance Protocol (TBD)
-        - Exchange Protocol (TBD)
-    - Normative References
+### [Personal Credential](PersonalCredential.md)
+- Implementation Principles
+- Distribution and Retrieval of DHS Public Key
+- Personal Credential Use (In Person)
+- Personal Credential Use (Online)
+- DHS Personal Credential Issuer
+    - Accessibility & Openness
+    - Platform & Software Security
+    - Credential Formats & Digital Signatures
+    - Metadata & Vocabulary
+    - .gov Binding (TBD)
+    - Issuance Protocol (TBD)
+- DHS Personal Credential Verifier
+    - Accessibility & Openness
+    - Platform & Software Security
+    - Credential Formats & Digital Signatures
+    - Metadata & Vocabulary
+    - .gov Binding (TBD)
+    - Exchange Protocol (TBD)
+- DHS Personal Credential Holder (Digital Wallet)
+    - Accessibility & Openness
+    - Platform & Software Security
+    - Credential Formats & Digital Signatures
+    - Issuance Protocol (TBD)
+    - Exchange Protocol (TBD)
+- Normative References
 
-- [Organization (Supply Chain) Credential](OrganizationCredential.md)
-    - CBP/Trade Issuer
-        - Credential Formats & Digital Signatures
-        - Metadata & Vocabulary
-        - Issuance Protocol
-    - CBP/Trade Verifier
-        - Credential Formats & Digital Signatures
-        - Metadata & Vocabulary
-        - Exchange Protocol   
-    - Normative References
+### [Organization (Supply Chain) Credential](OrganizationCredential.md)
+- CBP/Trade Issuer
+    - Credential Formats & Digital Signatures
+    - Metadata & Vocabulary
+    - Issuance Protocol
+- CBP/Trade Verifier
+  - Credential Formats & Digital Signatures
+    - Metadata & Vocabulary
+    - Exchange Protocol   
+  - Normative References
 
 ## Changelog
 
