@@ -64,7 +64,7 @@ The requirements span the use of personal credentials for both in-person and onl
   - Credential Formats & Digital Signatures
     - Metadata & Vocabulary
     - Exchange Protocol   
-  - Normative References
+- Normative References
 
 ## Changelog
 
