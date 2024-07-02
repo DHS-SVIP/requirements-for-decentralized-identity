@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Web of Public Trust | DHS Technical Implementation Requirements for Decentralized Identity</title>
+
+
+
+<meta name="description" content="These technical implementation requirements have been chosen to meet the operational needs of U.S. Citizenship and Immigration Services, U.S. Customs and Border Protection and the DHS Privacy Office for implementing digital credentialing capabilities.">
+
+
+
+
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/requirements-for-decentralized-identity/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/requirements-for-decentralized-identity/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://www.dhs.gov/profiles/dhsd8_gov/themes/custom/dhs_uswds_subtheme/logo-wordmark-blue.svg"
+              alt="SVIP">
+          
+          <em class="usa-logo__text">
+            Requirements
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/requirements-for-decentralized-identity/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/">
+                <span>Home</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/PersonalCredential/">
+                <span>Personal Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/OrganizationCredential/">
+                <span>Organization Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   usa-current" href="/requirements-for-decentralized-identity/WebPublicTrust/">
+                <span>Web of Public Trust</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              
+              
+              
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-5">
+              <span>Under Consideration</span>
+            </button>
+            
+            <ul id="nav-5" class="usa-nav__submenu">
+            
+            
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#issuance-protocol-personal-credential">Issuance Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#exchange-protocol-personal-credential">Exchange Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#credential-rendering-personal-credential">Credential Rendering</a>
+                </li>
+                
+              
+            
+            </ul>
+            
+            
+            
+          </li>
+          
+        </ul>
+        
+
+        
+          
+          
+        
+
+        
+
+
+        </div>
+      </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" class="usa-layout-docs usa-layout-docs__main desktop:grid-col-9 usa-prose">
+        <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      
+      
+        <div class="usa-layout-docs__sidenav desktop:grid-col-3">
+          <nav aria-label="Secondary navigation">
+  <ul class="usa-sidenav">
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/"
+         
+          >
+         Home
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/PersonalCredential/"
+         
+          >
+         Personal Credential
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/OrganizationCredential/"
+         
+          >
+         Organization Credential
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/WebPublicTrust/"
+          class="usa-current" 
+          >
+         Web of Public Trust
+      </a>
+      
+      <ul class="usa-sidenav__sublist">
+        
+  <li>
+    <a href="#digital-signatures--pki" >Digital Signatures & PKI </a>
+  </li>
+
+  <li>
+    <a href="#domain-name-system--dnssec" >Domain Name System & DNSSEC </a>
+  </li>
+
+  <li>
+    <a href="#self-certifying-web-identifiers" >Self-Certifying Web Identifiers </a>
+  </li>
+
+
+      </ul>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/UnderConsideration/"
+         
+          >
+         Under Consideration
+      </a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+        </div>
+      
+
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose desktop:grid-col-9" id="main-content">
+        
+          <h1>Web of Public Trust</h1>
+        
+        <div class="usa-alert usa-alert--warning usa-alert--slim">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      We are currently evaluating various options that use existing technologies and standards to implement and demonstrate a trust fabric that does not require a centralized trust registry, changes to DNS infrastructure, or  changes to certificate authority and browser trust store governance processes.
+    </p>
+  </div>
+</div>
+
+<p>Transactions conducted on the web between entities are reliant on trusted introductions over widely available infrastructure. These trusted introductions are done using identifiers that represent the entities.</p>
+
+<p>For transactions that involve credential issuance and verification, we need to have confidence in the identities of the parties to the transaction.</p>
+
+<p>The building blocks that make this possible are:</p>
+
+<h2 id="digital-signatures--pki">Digital Signatures &amp; PKI</h2>
+
+<p>More …</p>
+
+<h2 id="domain-name-system--dnssec">Domain Name System &amp; DNSSEC</h2>
+
+<p>More …</p>
+
+<h2 id="self-certifying-web-identifiers">Self-Certifying Web Identifiers</h2>
+
+<p>More …</p>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+      </main>
+    
+
+    
+
+    <footer>
+
+
+
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="">
+    <div class="usa-identifier__container"><div class="usa-identifier__identity" aria-label="">
+        <p class="usa-identifier__identity-domain"></p>
+        <p class="usa-identifier__identity-disclaimer"> <a href=""></a></p>
+      </div>
+    </div>
+  </section>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link"> </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+</footer>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/requirements-for-decentralized-identity/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

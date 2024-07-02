@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>DHS Technical Implementation Requirements for Decentralized Identity | DHS Technical Implementation Requirements for Decentralized Identity</title>
+
+
+
+<meta name="description" content="These technical implementation requirements have been chosen to meet the operational needs of U.S. Citizenship and Immigration Services, U.S. Customs and Border Protection and the DHS Privacy Office for implementing digital credentialing capabilities.">
+
+
+
+
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/requirements-for-decentralized-identity/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/requirements-for-decentralized-identity/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://www.dhs.gov/profiles/dhsd8_gov/themes/custom/dhs_uswds_subtheme/logo-wordmark-blue.svg"
+              alt="SVIP">
+          
+          <em class="usa-logo__text">
+            Requirements
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/requirements-for-decentralized-identity/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   usa-current" href="/requirements-for-decentralized-identity/">
+                <span>Home</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/PersonalCredential/">
+                <span>Personal Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/OrganizationCredential/">
+                <span>Organization Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/WebPublicTrust/">
+                <span>Web of Public Trust</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              
+              
+              
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-5">
+              <span>Under Consideration</span>
+            </button>
+            
+            <ul id="nav-5" class="usa-nav__submenu">
+            
+            
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#issuance-protocol-personal-credential">Issuance Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#exchange-protocol-personal-credential">Exchange Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#credential-rendering-personal-credential">Credential Rendering</a>
+                </li>
+                
+              
+            
+            </ul>
+            
+            
+            
+          </li>
+          
+        </ul>
+        
+
+        
+          
+          
+        
+
+        
+
+
+        </div>
+      </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" class="usa-layout-docs usa-layout-docs__main desktop:grid-col-9 usa-prose">
+        <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      
+      
+
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose" id="main-content">
+        
+          <h1>DHS Technical Implementation Requirements for Decentralized Identity</h1>
+        
+        <div class="usa-alert usa-alert--info usa-alert--slim">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      This is a work in progress. It will be updated as requirements and availability of standards-based technical choices  evolve, and testing and evaluation is conducted to verify the privacy, security, interoperability and scalability of the choices made.
+    </p>
+  </div>
+</div>
+
+<p>These technical implementation requirements have been chosen to meet the operational needs of U.S. Citizenship and Immigration Services, U.S. Customs and Border Protection and the DHS Privacy Office for implementing digital credentialing capabilities relevant to:</p>
+
+<ul>
+  <li>Citizenship and immigration</li>
+  <li>Cross-border travel</li>
+  <li>Cross-border trade</li>
+</ul>
+
+<p>The requirements seek to balance the robustness principle with a philosophy of “AND not OR” to ensure that the capabilities that incorporate these requirements can serve the diverse and global customer base of both CBP and USCIS in a secure, privacy respecting manner while enabling global interoperability at the technical level.</p>
+
+<h2 id="conventions-used">Conventions Used</h2>
+
+<p>The International Organization for Standardization (ISO) uses specific verbal forms to convey clarity on what is a requirement and what is a recommendation or other type of statement.</p>
+
+<p>The requirements on the following pages adopt and use the following ISO document conventions:</p>
+
+<ul>
+  <li>Requirements - SHALL, SHALL NOT</li>
+  <li>Recommendations - SHOULD, SHOULD NOT</li>
+  <li>Permission - MAY, MAY NOT</li>
+  <li>Possibility and Capability - CAN, CANNOT</li>
+</ul>
+
+<h2 id="scope-of-requirements">Scope of Requirements</h2>
+
+<p>The requirements span the use of <a href="/requirements-for-decentralized-identity/PersonalCredential/">Personal Credentials</a> for both in-person and online usage scenarios, and the use of <a href="/requirements-for-decentralized-identity/OrganizationCredential/">Organization Credentials</a> for online supply chain usage scenarios.</p>
+
+<p><img src="/requirements-for-decentralized-identity/assets/img/Requirements-Personal-SupplyChain.png" alt="Requirements for Personal and Supply Chain Credentials" /></p>
+
+<p>The <a href="/requirements-for-decentralized-identity/WebPublicTrust/">Web of Public Trust</a> section provides information on the technical building blocks used by DHS that enable trusted interactions on the web.</p>
+
+<p>The <a href="/requirements-for-decentralized-identity/UnderConsideration/">Under Consideration</a> section provides information on areas that are still TBD.</p>
+
+<h2 id="changelog">Changelog</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th style="text-align: center">Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>March 18, 2024</td>
+      <td style="text-align: center">1.0.0</td>
+    </tr>
+    <tr>
+      <td>July 2, 2024</td>
+      <td style="text-align: center">1.1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>See <a href="/requirements-for-decentralized-identity/releases">Release Version Information</a> for more details.</p>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+      </main>
+    
+
+    
+
+    <footer>
+
+
+
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="">
+    <div class="usa-identifier__container"><div class="usa-identifier__identity" aria-label="">
+        <p class="usa-identifier__identity-domain"></p>
+        <p class="usa-identifier__identity-disclaimer"> <a href=""></a></p>
+      </div>
+    </div>
+  </section>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link"> </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+</footer>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/requirements-for-decentralized-identity/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

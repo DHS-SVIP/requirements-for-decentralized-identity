@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Under Consideration | DHS Technical Implementation Requirements for Decentralized Identity</title>
+
+
+
+<meta name="description" content="These technical implementation requirements have been chosen to meet the operational needs of U.S. Citizenship and Immigration Services, U.S. Customs and Border Protection and the DHS Privacy Office for implementing digital credentialing capabilities.">
+
+
+
+
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/requirements-for-decentralized-identity/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/requirements-for-decentralized-identity/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://www.dhs.gov/profiles/dhsd8_gov/themes/custom/dhs_uswds_subtheme/logo-wordmark-blue.svg"
+              alt="SVIP">
+          
+          <em class="usa-logo__text">
+            Requirements
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/requirements-for-decentralized-identity/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/">
+                <span>Home</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/PersonalCredential/">
+                <span>Personal Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/OrganizationCredential/">
+                <span>Organization Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/WebPublicTrust/">
+                <span>Web of Public Trust</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              
+              
+              
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-5">
+              <span>Under Consideration</span>
+            </button>
+            
+            <ul id="nav-5" class="usa-nav__submenu">
+            
+            
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#issuance-protocol-personal-credential">Issuance Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#exchange-protocol-personal-credential">Exchange Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#credential-rendering-personal-credential">Credential Rendering</a>
+                </li>
+                
+              
+            
+            </ul>
+            
+            
+            
+          </li>
+          
+        </ul>
+        
+
+        
+          
+          
+        
+
+        
+
+
+        </div>
+      </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" class="usa-layout-docs usa-layout-docs__main desktop:grid-col-9 usa-prose">
+        <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      
+      
+        <div class="usa-layout-docs__sidenav desktop:grid-col-3">
+          <nav aria-label="Secondary navigation">
+  <ul class="usa-sidenav">
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/"
+         
+          >
+         Home
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/PersonalCredential/"
+         
+          >
+         Personal Credential
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/OrganizationCredential/"
+         
+          >
+         Organization Credential
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/WebPublicTrust/"
+         
+          >
+         Web of Public Trust
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/UnderConsideration/"
+          class="usa-current" 
+          >
+         Under Consideration
+      </a>
+      
+      <ul class="usa-sidenav__sublist">
+        
+  <li>
+    <a href="#issuance-protocol-personal-credential" >Issuance Protocol </a>
+  </li>
+
+  <li>
+    <a href="#exchange-protocol-personal-credential" >Exchange Protocol </a>
+  </li>
+
+  <li>
+    <a href="#credential-rendering-personal-credential" >Credential Rendering </a>
+  </li>
+
+
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+        </div>
+      
+
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose desktop:grid-col-9" id="main-content">
+        
+          <h1>Under Consideration</h1>
+        
+        <h2 id="issuance-protocol-personal-credential">Issuance Protocol (Personal Credential)</h2>
+
+<div class="usa-alert usa-alert--warning usa-alert--slim">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      Following many-to-many, multi-vendor interoperability testing, DHS will update the requirements for issuance protocols
+    </p>
+  </div>
+</div>
+
+<ul>
+  <li>DHS hopes to support multiple issuance protocols</li>
+  <li>Issuance protocol SHALL:
+    <ul>
+      <li>support required credential format &amp; digital signature mechanisms</li>
+      <li>support required metadata and vocabulary distribution and verification mechanisms</li>
+      <li>enable the Holder to choose a digital wallet</li>
+      <li>disregard (via implementation profiles) external dependencies that are duplicative or not utilized by the DHS Issuer</li>
+    </ul>
+  </li>
+  <li>Options under consideration include:
+    <ul>
+      <li>W3C CCG VC-API</li>
+      <li>W3C CCG VC-API + W3C CCG CHAPI</li>
+      <li>OIDF DCP OID4VCI</li>
+      <li>OIDF DCP OID4VCI + W3C CCG CHAPI</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="exchange-protocol-personal-credential">Exchange Protocol (Personal Credential)</h2>
+
+<div class="usa-alert usa-alert--warning usa-alert--slim">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      Following many-to-many, multi-vendor interoperability testing, DHS will update the requirements for exchange protocols
+    </p>
+  </div>
+</div>
+
+<ul>
+  <li>DHS hopes to support multiple exchange protocols</li>
+  <li>Exchange protocol SHALL:
+    <ul>
+      <li>support required credential format &amp; digital signature mechanisms</li>
+      <li>support required metadata and vocabulary distribution and verification mechanisms</li>
+      <li>enable the Holder to choose a digital wallet</li>
+      <li>disregard (via implementation profiles) external dependencies that are duplicative or not utilized by the DHS Verifier</li>
+    </ul>
+  </li>
+  <li>Options under consideration include:
+    <ul>
+      <li>W3C CCG VC-API</li>
+      <li>W3C CCG VC-API + W3C CCG CHAPI</li>
+      <li>OIDF DCP OID4VP</li>
+      <li>OIDF DCP OID4VP + W3C CCG CHAPI</li>
+      <li>W3C WICG Digital Credentials API</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="credential-rendering-personal-credential">Credential Rendering (Personal Credential)</h2>
+
+<div class="usa-alert usa-alert--warning usa-alert--slim">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      Following testing and evaluation, DHS will update the requirements for credential rendering
+    </p>
+  </div>
+</div>
+
+<ul>
+  <li>DHS is seeking a protocol independent mechanism for visually rendering an issued credential in a manner that preserves DHS branding</li>
+  <li>Currently exploring the <em>renderMethod</em> extensibility point built into the [W3C-VC-DATA-MODEL]. More information can be found at <a href="https://w3c-ccg.github.io/vc-render-method/">W3C CCG Verifable Credential Rendering Methods</a></li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+      </main>
+    
+
+    
+
+    <footer>
+
+
+
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="">
+    <div class="usa-identifier__container"><div class="usa-identifier__identity" aria-label="">
+        <p class="usa-identifier__identity-domain"></p>
+        <p class="usa-identifier__identity-disclaimer"> <a href=""></a></p>
+      </div>
+    </div>
+  </section>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link"> </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+</footer>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/requirements-for-decentralized-identity/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Personal Credential | DHS Technical Implementation Requirements for Decentralized Identity</title>
+
+
+
+<meta name="description" content="Description of Personal Credentials">
+
+
+
+
+
+    
+
+
+
+<link rel="stylesheet"
+  href="/requirements-for-decentralized-identity/assets/css/uswds-theme.css"
+  media="screen">
+
+
+    
+  </head>
+  <body class="  ">
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    
+
+
+
+
+  <div class="usa-overlay"></div>
+
+  <header class="usa-header usa-header--basic" role="banner">
+
+
+  
+    <div class="usa-nav-container">
+  
+    <div class="usa-navbar">
+      <div class="usa-logo" id="header-logo">
+        <a
+          href="/requirements-for-decentralized-identity/"
+          title="Home">
+          
+            <img
+              class="usa-logo-img"
+              src="https://www.dhs.gov/profiles/dhsd8_gov/themes/custom/dhs_uswds_subtheme/logo-wordmark-blue.svg"
+              alt="SVIP">
+          
+          <em class="usa-logo__text">
+            Requirements
+          </em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+
+    <nav role="navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <img src="/requirements-for-decentralized-identity/assets/uswds/img/close.svg" alt="close">
+        </button>
+
+        
+        
+        
+        <ul class="usa-nav__primary usa-accordion">
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/">
+                <span>Home</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link   usa-current" href="/requirements-for-decentralized-identity/PersonalCredential/">
+                <span>Personal Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/OrganizationCredential/">
+                <span>Organization Credential</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              <a class=" usa-nav__link  " href="/requirements-for-decentralized-identity/WebPublicTrust/">
+                <span>Web of Public Trust</span>
+              </a>
+            
+          </li>
+          
+          <li class="usa-nav__primary-item">
+            
+              
+              
+              
+            <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="nav-5">
+              <span>Under Consideration</span>
+            </button>
+            
+            <ul id="nav-5" class="usa-nav__submenu">
+            
+            
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#issuance-protocol-personal-credential">Issuance Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#exchange-protocol-personal-credential">Exchange Protocol</a>
+                </li>
+                
+              
+                
+                <li class="usa-nav__submenu-item">
+                  <a href="/requirements-for-decentralized-identity/UnderConsideration/#credential-rendering-personal-credential">Credential Rendering</a>
+                </li>
+                
+              
+            
+            </ul>
+            
+            
+            
+          </li>
+          
+        </ul>
+        
+
+        
+          
+          
+        
+
+        
+
+
+        </div>
+      </div>
+    </nav>
+  
+    </div>
+  
+  </header>
+
+
+
+
+    
+    
+
+
+    
+
+    
+
+    
+      
+      
+
+
+
+
+    
+    
+
+    
+      <main id="main-content" class="usa-layout-docs usa-layout-docs__main desktop:grid-col-9 usa-prose">
+        <div class="usa-section">
+  <div class="grid-container">
+    <div class="grid-row grid-gap flex-align-start">
+      
+      
+        <div class="usa-layout-docs__sidenav desktop:grid-col-3">
+          <nav aria-label="Secondary navigation">
+  <ul class="usa-sidenav">
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/"
+         
+          >
+         Home
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/PersonalCredential/"
+          class="usa-current" 
+          >
+         Personal Credential
+      </a>
+      
+      <ul class="usa-sidenav__sublist">
+        
+  <li>
+    <a href="#11-dhs-personal-credential-issuer" >Personal Credential Issuer </a>
+  </li>
+
+  <li>
+    <a href="#12-dhs-personal-credential-verifier" >Personal Credential Verifier </a>
+  </li>
+
+  <li>
+    <a href="#13-dhs-personal-credential-holder-digital-wallet" >Personal Credential Holder </a>
+  </li>
+
+  <li>
+    <a href="#14-normative-references" >Normative References </a>
+  </li>
+
+
+      </ul>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/OrganizationCredential/"
+         
+          >
+         Organization Credential
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/WebPublicTrust/"
+         
+          >
+         Web of Public Trust
+      </a>
+      
+    </li>
+    
+      
+      
+      
+    <li class="usa-sidenav__item">
+      <a href="/requirements-for-decentralized-identity/UnderConsideration/"
+         
+          >
+         Under Consideration
+      </a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+        </div>
+      
+
+      <main class="usa-layout-docs usa-layout-docs__main usa-prose desktop:grid-col-9" id="main-content">
+        
+          <h1>Personal Credential</h1>
+        
+        <h2 id="implementation-principles">Implementation Principles</h2>
+
+<ul>
+  <li>Digital is not a requirement; it is a choice!</li>
+  <li>Eliminate “phone home” architecture/technology/implementations</li>
+  <li>Eliminate “back-channel” interactions between verifiers of the credential and the issuer, which are not visible to the credential holder</li>
+  <li>Support non-trackable selective disclosure of information under holder control</li>
+</ul>
+
+<h2 id="credential-use-in-person">Credential Use (In Person)</h2>
+
+<p><img src="/requirements-for-decentralized-identity/assets/img/Requirements-scan-to-Verify.png" alt="In Person Personal Credential Use" /></p>
+
+<ul>
+  <li>Implemented using W3C CCG Verifiable Credential Barcodes [VC-BARCODES]
+    <ul>
+      <li>Inclusive, global usage without the need for a mobile device</li>
+      <li>DHS continues to have no awareness of credential usage by a Customer</li>
+      <li>Enhanced content integrity &amp; origin authenticity features on the physical card</li>
+      <li>Support for occasionally connected Verifiers  – DHS/USCIS public keys can be resolved, downloaded and cached on the verifying device, using the resolver functionality that is part of the W3C Decentralized Identifiers (DID) standard to allow local verification to occur without network connectivity</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="credential-use-online">Credential Use (Online)</h2>
+
+<p><img src="/requirements-for-decentralized-identity/assets/img/Requirements-Online.png" alt="Online Personal Credential Use" /></p>
+
+<ul>
+  <li>Implemented using W3C Verifiable Credentials Data Model [W3C-VC-DATA-MODEL] and W3C Decentralized Identifiers  [W3C-DID]
+    <ul>
+      <li>Gives the customer agency and control over their data</li>
+      <li>Addresses the “phone home” problem in existing identity models</li>
+      <li>Provides credential aggregation and selective disclosure with informed consent</li>
+      <li>Removes the conflation of identifiers and authenticators</li>
+      <li>Supports global resolution of an Issuer’s identifier to its public key(s) &amp; their retrieval</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="11-dhs-personal-credential-issuer">1.1. DHS Personal Credential Issuer</h2>
+
+<h3 id="111-accessibility--openness">1.1.1. Accessibility &amp; Openness</h3>
+
+<ul>
+  <li>SHALL NOT implement capabilities that enable tracking of Holder credential use</li>
+  <li>SHALL implement the relevant portions of the W3C Web Content Accessibility Guidelines [W3C-WCAG] to ensure compliance with the Section 508 of the U.S. Rehabilitation Act
+    <ul>
+      <li>SHOULD implement the U.S. Web Design System ( https://designsystem.digital.gov/ )</li>
+    </ul>
+  </li>
+  <li>SHALL prioritize the implementation of data formats and associated security and privacy mechanisms, inclusive of public facing APIs, that utilize globally available standards and specifications that are openly developed, royalty free and freely available to implement</li>
+  <li>SHALL enable the Holder to choose a digital wallet</li>
+  <li>SHALL implement support for Holder applications (digital wallets) that use web platform technologies</li>
+  <li>SHALL implement support for Holder applications (digital wallets) that use native platform technologies</li>
+</ul>
+
+<h3 id="112-platform--software-security">1.1.2. Platform &amp; Software Security</h3>
+
+<ul>
+  <li>SHALL utilize cryptographic modules validated by the joint U.S. &amp; Canada Cryptographic Module Validation Program [CMVP]</li>
+  <li>SHALL utilize [FIPS-140] compliant cryptographic key storage mechanisms
+    <ul>
+      <li>MAY utilize an operating system capability</li>
+      <li>MAY utilize an external device capability</li>
+      <li>MAY utilize a remote backend capability</li>
+    </ul>
+  </li>
+  <li>SHALL provide a Software Bill of Materials (SBOM) containing the details and supply chain relationships of various components used in building the Issuer software
+    <ul>
+      <li>SHALL contain the minimum elements for a SBOM as defined in the joint report by the Department of Commerce and the National Telecommunications and Information Administration
+        <ul>
+          <li>https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="113-credential-formats--digital-signatures">1.1.3. Credential Formats &amp; Digital Signatures</h3>
+
+<ul>
+  <li>SHALL implement the [W3C-VC-DATA-MODEL] using the JSON-LD Compacted Document Form</li>
+  <li>SHALL implement the embedded proof mechanism defined in [W3C-VC-DATA-INTEGRITY]</li>
+  <li>SHALL implement selective disclosure capabilities using [W3C-VC-DATA-INTEGRITY] proof sets to support multiple proofs in a single document
+    <ul>
+      <li>SHALL implement a proof that is U.S. Federal Information Processing Standards (FIPS) compliant e.g., ECDSA Cryptosuites</li>
+      <li>SHALL implement a proof based on non-correlatable signatures e.g., BBS Cryptosuites</li>
+      <li>MAY implement additional proofs e.g., PQC</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="114-identifiers--metadata">1.1.4. Identifiers &amp; Metadata</h3>
+
+<ul>
+  <li>SHALL implement [W3C-DID]
+    <ul>
+      <li>SHALL implement the did:web method as the Issuer (Organizational) Identifier</li>
+      <li>SHALL utilize the DID Document as the authoritative metadata distribution mechanism</li>
+      <li>SHALL implement direct DID resolution</li>
+      <li>SHALL implement support for external DID/Metadata resolvers</li>
+      <li>SHALL digitally sign the DID Document with a U.S. Federal Information Processing Standards (FIPS) compliant [W3C-VC-DATA-INTEGRITY] proof to enable integrity and provenance verification</li>
+    </ul>
+  </li>
+  <li>SHALL implement [W3C-BITSTRING-STATUS-LIST] for credential status checks inclusive of revocation checks</li>
+</ul>
+
+<h3 id="115-vocabulary">1.1.5. Vocabulary</h3>
+
+<ul>
+  <li>SHALL implement [CITIZENSHIP-VOCAB]</li>
+</ul>
+
+<h2 id="12-dhs-personal-credential-verifier">1.2. DHS Personal Credential Verifier</h2>
+
+<h3 id="121-accessibility--openness">1.2.1. Accessibility &amp; Openness</h3>
+
+<ul>
+  <li>SHALL NOT implement capabilities that enable Issuer tracking of Holder credential use</li>
+  <li>SHALL implement the relevant portions of the W3C Web Content Accessibility Guidelines [W3C-WCAG] to ensure compliance with the Section 508 of the U.S. Rehabilitation Act
+    <ul>
+      <li>SHOULD implement the U.S. Web Design System ( https://designsystem.digital.gov/ )</li>
+    </ul>
+  </li>
+  <li>SHALL prioritize the implementation of data formats and associated security and privacy mechanisms, inclusive of public facing APIs, that utilize globally available standards and specifications that are openly developed, royalty free and freely available to implement</li>
+  <li>SHALL implement in-context explanations that describe who is accessing credentials, what attributes, capabilities or inferences are accessed, for what purpose the credential is needed, and how data will be used, shared and retained</li>
+  <li>SHALL enable the Holder to choose a digital wallet</li>
+  <li>SHALL implement support for Holder applications (digital wallets) that use web platform technologies</li>
+  <li>SHALL implement support for Holder applications (digital wallets) that use native platform technologies</li>
+</ul>
+
+<h3 id="122-platform--software-security">1.2.2. Platform &amp; Software Security</h3>
+
+<ul>
+  <li>SHALL utilize cryptographic modules validated by the joint U.S. &amp; Canada Cryptographic Module Validation Program [CMVP]</li>
+  <li>SHALL utilize [FIPS-140] compliant cryptographic key storage mechanisms
+    <ul>
+      <li>MAY utilize an operating system capability</li>
+      <li>MAY utilize an external device capability</li>
+      <li>MAY utilize a remote backend capability</li>
+    </ul>
+  </li>
+  <li>SHALL provide a Software Bill of Materials (SBOM) containing the details and supply chain relationships of various components used in building the Issuer software
+    <ul>
+      <li>SHALL contain the minimum elements for a SBOM as defined in the joint report by the Department of Commerce and the National Telecommunications and Information Administration
+        <ul>
+          <li>https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="123-credential-formats--digital-signatures">1.2.3. Credential Formats &amp; Digital Signatures</h3>
+
+<ul>
+  <li>SHALL implement the [W3C-VC-DATA-MODEL] using the JSON-LD Compacted Document Form</li>
+  <li>SHALL implement the embedded proof mechanism defined in [W3C-VC-DATA-INTEGRITY]</li>
+  <li>SHALL implement selective disclosure capabilities using [W3C-VC-DATA-INTEGRITY] proof sets to support multiple proofs in a single document
+    <ul>
+      <li>SHALL implement a proof that is U.S. Federal Information Processing Standards (FIPS) compliant e.g., ECDSA Cryptosuites</li>
+      <li>SHALL implement a proof based on non-correlatable signatures e.g., BBS Cryptosuites</li>
+      <li>SHALL verify all presented proofs in the proof set</li>
+      <li>SHOULD prioritize minimal disclosure of data and metadata by the Holder when negotiating the use of a mutually supported proof, while respecting jurisdictional constraints</li>
+      <li>MAY implement additional proofs e.g., PQC</li>
+    </ul>
+  </li>
+  <li>MAY implement additional credential data formats and associated proof mechanisms</li>
+</ul>
+
+<h3 id="124-identifiers--metadata">1.2.4. Identifiers &amp; Metadata</h3>
+
+<ul>
+  <li>SHALL implement [W3C-DID]
+    <ul>
+      <li>SHALL utilize the DID Document as an authoritative source of metadata</li>
+      <li>SHALL implement direct DID resolution</li>
+      <li>SHALL implement support for external DID/Metadata resolvers</li>
+      <li>SHALL digitally verify the U.S. Federal Information Processing Standards (FIPS) compliant [W3C-VC-DATA-INTEGRITY] proof on the DID Document to ensure its integrity and provenance</li>
+    </ul>
+  </li>
+  <li>SHALL implement [W3C-BITSTRING-STATUS-LIST] for credential status checks including revocation checks</li>
+</ul>
+
+<h3 id="125-vocabulary">1.2.5. Vocabulary</h3>
+
+<ul>
+  <li>SHALL implement [CITIZENSHIP-VOCAB]</li>
+</ul>
+
+<h2 id="13-dhs-personal-credential-holder-digital-wallet">1.3. DHS Personal Credential Holder (Digital Wallet)</h2>
+
+<h3 id="131-accessibility--openness">1.3.1. Accessibility &amp; Openness</h3>
+
+<ul>
+  <li>SHALL NOT implement capabilities that enable Issuer tracking of Holder credential use</li>
+  <li>SHALL implement the relevant portions of the W3C Web Content Accessibility Guidelines [W3C-WCAG] to ensure compliance with the Section 508 of the U.S. Rehabilitation Act
+    <ul>
+      <li>SHOULD implement the U.S. Web Design System ( https://designsystem.digital.gov/ )</li>
+    </ul>
+  </li>
+  <li>SHALL prioritize the implementation of data formats and associated security and privacy mechanisms, inclusive of public facing APIs, that utilize globally available standards and specifications that are openly developed, royalty free and freely available to implement</li>
+  <li>SHALL implement in-context explanations that describe who is accessing credentials, what attributes, capabilities or inferences are accessed, for what purpose the credential is needed, and how data will be used, shared and retained</li>
+  <li>SHALL enable the Holder to choose a digital wallet</li>
+  <li>SHOULD be implemented using web platform technologies</li>
+  <li>MAY be implemented using native platform technologies</li>
+</ul>
+
+<h3 id="132-platform--software-security">1.3.2. Platform &amp; Software Security</h3>
+
+<ul>
+  <li>SHALL utilize cryptographic modules validated by the joint U.S. &amp; Canada Cryptographic Module Validation Program [CMVP]</li>
+  <li>SHALL utilize [FIPS-140] compliant cryptographic key storage mechanisms
+    <ul>
+      <li>MAY utilize an operating system capability</li>
+      <li>MAY utilize an external device capability</li>
+      <li>MAY utilize a remote backend capability</li>
+    </ul>
+  </li>
+  <li>SHALL provide a Software Bill of Materials (SBOM) containing the details and supply chain relationships of various components used in building the Issuer software
+    <ul>
+      <li>SHALL contain the minimum elements for a SBOM as defined in the joint report by the Department of Commerce and the National Telecommunications and Information Administration
+        <ul>
+          <li>https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="133-credential-formats--digital-signatures">1.3.3. Credential Formats &amp; Digital Signatures</h3>
+
+<ul>
+  <li>SHALL implement the [W3C-VC-DATA-MODEL] using the JSON-LD Compacted Document Form</li>
+  <li>SHALL implement the embedded proof mechanism defined in [W3C-VC-DATA-INTEGRITY]</li>
+  <li>SHALL implement selective disclosure capabilities using [W3C-VC-DATA-INTEGRITY] proof sets to support multiple proofs in a single document
+    <ul>
+      <li>SHALL implement a proof that is U.S. Federal Information Processing Standards (FIPS) compliant e.g., ECDSA Cryptosuites</li>
+      <li>SHALL implement a proof based on non-correlatable signatures e.g., BBS Cryptosuites</li>
+      <li>SHALL only present one or more proofs supported by the Verifier</li>
+      <li>SHOULD prioritize minimal disclosure of data and metadata by the Holder when negotiating the use of a mutually supported proof, while respecting jurisdictional constraints</li>
+      <li>MAY implement additional proofs e.g., PQC</li>
+    </ul>
+  </li>
+  <li>MAY implement additional credential data formats and associated proof mechanisms</li>
+</ul>
+
+<h3 id="134-identifiers">1.3.4. Identifiers</h3>
+
+<ul>
+  <li>SHALL implement [W3C-DID]</li>
+</ul>
+
+<h2 id="14-normative-references">1.4. Normative References</h2>
+
+<ul>
+  <li>[W3C-VC-DATA-MODEL] W3C Verifiable Credentials Data Model
+    <ul>
+      <li>https://www.w3.org/TR/vc-data-model-2.0/</li>
+    </ul>
+  </li>
+  <li>[W3C-VC-DATA-INTEGRITY] W3C Verifiable Credentials Data Integrity
+    <ul>
+      <li>https://www.w3.org/TR/vc-data-integrity/</li>
+    </ul>
+  </li>
+  <li>[W3C-BITSTRING-STATUS-LIST] W3C Bitstring Status List
+    <ul>
+      <li>https://www.w3.org/TR/vc-bitstring-status-list/</li>
+    </ul>
+  </li>
+  <li>[W3C-DID] W3C Decentralized Identifiers
+    <ul>
+      <li>https://www.w3.org/TR/did-core/</li>
+    </ul>
+  </li>
+  <li>[W3C-WCAG] W3C Web Content Accessibility Guidelines
+    <ul>
+      <li>https://www.w3.org/TR/WCAG22/</li>
+    </ul>
+  </li>
+  <li>[VC-BARCODES] W3C CCG Verifiable Credential Barcodes
+    <ul>
+      <li>https://w3c-ccg.github.io/vc-barcodes/</li>
+    </ul>
+  </li>
+  <li>[CITIZENSHIP-VOCAB] W3C CCG Citizenship Vocabulary
+    <ul>
+      <li>https://w3c-ccg.github.io/citizenship-vocab/</li>
+    </ul>
+  </li>
+  <li>[FIPS-140] Security Requirements for Cryptographic Modules
+    <ul>
+      <li>https://csrc.nist.gov/pubs/fips/140-3/final</li>
+    </ul>
+  </li>
+  <li>[CMVP] Cryptographic Module Validation Program
+    <ul>
+      <li>https://csrc.nist.gov/Projects/Cryptographic-Module-Validation-Program</li>
+    </ul>
+  </li>
+</ul>
+
+      </main>
+    </div>
+  </div>
+</div>
+
+      </main>
+    
+
+    
+
+    <footer>
+
+
+
+
+
+
+<div class="usa-identifier">
+  <section
+    class="usa-identifier__section usa-identifier__section--masthead"
+    aria-label="">
+    <div class="usa-identifier__container"><div class="usa-identifier__identity" aria-label="">
+        <p class="usa-identifier__identity-domain"></p>
+        <p class="usa-identifier__identity-disclaimer"> <a href=""></a></p>
+      </div>
+    </div>
+  </section>
+  <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="">
+    <div class="usa-identifier__container">
+      <ul class="usa-identifier__required-links-list">
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link"> </a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href=""
+            class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+        <li class="usa-identifier__required-links-item">
+          <a href="" class="usa-identifier__required-link usa-link"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+</footer>
+
+
+    <!-- dynamically determine scripts needed for this config -->
+
+
+
+
+
+
+
+  
+    
+      <script src="/requirements-for-decentralized-identity/assets/uswds/js/uswds.min.js" async></script>
+    
+
+  
+    
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
