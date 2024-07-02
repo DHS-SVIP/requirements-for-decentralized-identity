@@ -18,8 +18,7 @@ subnav:
 ### 2.1.1. Credential Formats & Digital Signatures
 
 - SHALL implement the \[W3C-VC-DATA-MODEL\] using the JSON-LD Compacted Document Form
-- SHALL implement the enveloping proof mechanism defined in \[W3C-VC-JOSE-COSE\] with JOSE (Section 3.1.1)
-- SHALL implement \[W3C-DID\]
+- SHALL implement the enveloping proof mechanism defined in \[W3C-VC-JOSE-COSE\] with JOSE
 - MAY implement additional \[W3C-VC-DATA-MODEL\] compliant proof mechanisms
 
 ### 2.1.2. Identifiers & Metadata
@@ -44,8 +43,7 @@ subnav:
 ### 2.2.1. Credential Formats & Digital Signatures
 
 - SHALL implement the \[W3C-VC-DATA-MODEL\] using the JSON-LD Compacted Document Form
-- SHALL implement the enveloping proof mechanism defined in \[W3C-VC-JOSE-COSE\] with JOSE (Section 3.1.1)
-- SHALL implement \[W3C-DID\]
+- SHALL implement the enveloping proof mechanism defined in \[W3C-VC-JOSE-COSE\] with JOSE
 - MAY implement additional \[W3C-VC-DATA-MODEL\] compliant proof mechanisms
 
 ### 2.2.2. Identifiers & Metadata

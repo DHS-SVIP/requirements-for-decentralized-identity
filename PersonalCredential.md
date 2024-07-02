@@ -30,8 +30,7 @@ subnav:
   - Inclusive, global usage without the need for a mobile device
   - DHS continues to have no awareness of credential usage by a Customer
   - Enhanced content integrity & origin authenticity features on the physical card
-  - Support for occasionally connected Verifiers  – DHS/USCIS public keys can be resolved, downloaded and cached on the verifying device, using the resolver functionality that is part of the W3C Decentralized Identifiers (DID) standard to allow local verification to occur without network connectivity
-
+  - Support for occasionally connected Verifiers  – DHS public keys can be resolved, downloaded and cached on the verifying device, using the resolver functionality that is part of the W3C Decentralized Identifiers (DID) standard to allow local verification to occur without network connectivity
 
 ## Credential Use (Online)
 
