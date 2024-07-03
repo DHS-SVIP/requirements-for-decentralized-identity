@@ -37,6 +37,6 @@ The [Under Consideration](UnderConsideration.md) section provides information on
 | Date           |  Version  |
 |----------------|:---------:|
 | March 18, 2024 |   1.0.0   |
-| July 2, 2024   |   1.1.0   |
+| July 3, 2024   |   1.1.0   |
 
-See Release Version Information for more details.
+See Release Version Information for details.

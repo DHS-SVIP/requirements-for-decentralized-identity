@@ -69,5 +69,6 @@ subnav:
   </div>
 </div>
 
-- DHS is seeking a protocol independent mechanism for visually rendering an issued credential in a manner that preserves DHS branding
-- Currently exploring the *renderMethod* extensibility point built into the \[W3C-VC-DATA-MODEL\]. More information can be found at [W3C CCG Verifable Credential Rendering Methods](https://w3c-ccg.github.io/vc-render-method/)
+- DHS is seeking a credential-bound, protocol independent mechanism for visually rendering an issued credential in a manner that preserves DHS branding
+- Currently exploring the *renderMethod* extensibility point built into the \[W3C-VC-DATA-MODEL\]. 
+  - More information @ [W3C CCG Verifiable Credential Rendering Methods](https://w3c-ccg.github.io/vc-render-method/)
