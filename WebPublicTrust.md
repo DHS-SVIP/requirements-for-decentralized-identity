@@ -45,13 +45,13 @@ addresses and back.
 
 Domain Name System Security Extensions (DNSSEC) provide origin authentication and integrity protection for DNS data, as well as a means of public key distribution.
 
-### Self-Certifying Identifiers & DIDs
-
-A Self-Certifying Identifier (SCID) is an identifier that is uniquely and cryptographically derived from the initial content of an identified object, and forms some or all of the object identifier.
+## Decentralized Identifiers & SCIDs
 
 Decentralized Identifiers (DIDs) are a type of identifier that enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs associate an entity (DID Subject) with a set of set of data describing the entity (DID Document), including mechanisms such as public keys.
 
-Using a SCID in a DID enables a set of features that allow for the implementation of critical functionality such as data integrity and pre-key-rotation, without sacrificing an entity's agency and control over its own identifier.   
+A Self-Certifying Identifier (SCID) is an identifier that is uniquely and cryptographically derived from the initial content of an identified object e.g. a DID Document, and forms some or all of the object identifier.
+
+Utilizing a SCID in a DID enables a set of features that allow for the implementation of critical features such as data integrity and pre-key-rotation, without sacrificing an entity's agency and control over its own identifer.      
 
 ## Using the Building Blocks
 
