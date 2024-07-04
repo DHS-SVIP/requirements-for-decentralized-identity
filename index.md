@@ -47,6 +47,6 @@ The [Under Consideration]({{ site.baseurl }}/UnderConsideration/) section provid
 | Date           |  Version  |
 |----------------|:---------:|
 | March 18, 2024 |   1.0.0   |
-| July 3, 2024   |   1.1.0   |
+| July 4, 2024   |   1.1.0   |
 
 See Release Version Information for details.

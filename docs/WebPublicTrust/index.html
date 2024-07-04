@@ -297,17 +297,34 @@
 
 <p>The technical building blocks that make such trusted introductions possible are:</p>
 
-<h2 id="digital-signatures--pki">Digital Signatures &amp; PKI</h2>
+<h3 id="digital-signatures--pki">Digital Signatures &amp; PKI</h3>
+
+<p>As a digital analogue to a written signature, a digital signature provides assurances that the claimed signatory signed the information, and the information was not modified after signature generation.</p>
+
+<p>Signature generation uses a private key to generate a digital signature; signature verification uses a public key that corresponds to, but is not the same as, the private key. Each signatory possesses a private and public key pair. Public keys may be known by the public; private keys are kept secret. Anyone can verify the signature by employing the signatory’s public key. Only the entity that possesses the private key can perform signature generation.</p>
+
+<p>A public key infrastructure (PKI) is a framework that is established to issue, maintain and revoke the certificates. A Certificate Authority (CA) in a PKI is the entity responsible for issuing certificates that can be used for digital signature generation.</p>
+
+<h3 id="domain-name-system--dnssec">Domain Name System &amp; DNSSEC</h3>
+
+<p>The Domain Name System (DNS) is a distributed computing system that enables access to Internet
+resources by user-friendly domain names rather than IP addresses, by translating domain names to IP
+addresses and back.</p>
+
+<p>Domain Name System Security Extensions (DNSSEC) provide origin authentication and integrity protection for DNS data, as well as a means of public key distribution.</p>
+
+<h3 id="self-certifying-identifiers--dids">Self-Certifying Identifiers &amp; DIDs</h3>
+
+<p>A Self-Certifying Identifier (SCID) is an identifier that is uniquely and cryptographically derived from the initial content of an identified object, and forms some or all of the object identifier.</p>
+
+<p>Decentralized Identifiers (DIDs) are a type of identifier that enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs associate an entity (DID Subject) with a set of set of data describing the entity (DID Document), including mechanisms such as public keys.</p>
+
+<p>Using a SCID in a DID enables a set of features that allow for the implementation of critical functionality such as data integrity and pre-key-rotation, without sacrificing an entity’s agency and control over its own identifier.</p>
+
+<h2 id="using-the-building-blocks">Using the Building Blocks</h2>
 
 <p>…</p>
 
-<h2 id="domain-name-system--dnssec">Domain Name System &amp; DNSSEC</h2>
-
-<p>…</p>
-
-<h2 id="self-certifying-identifiers--dids">Self-Certifying Identifiers &amp; DIDs</h2>
-
-<p>…</p>
 
       </main>
     </div>
