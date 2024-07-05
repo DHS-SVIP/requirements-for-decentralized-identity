@@ -9,17 +9,9 @@ subnav:
     href: '#digital-signatures--pki' 
   - text: Domain Name System & DNSSEC
     href: '#domain-name-system--dnssec'
-  - text: Self-Certifying Identifiers & DIDs
-    href: '#self-certifying-identifiers--dids'
+  - text: Decentralized Identifiers & SCIDs
+    href: '#decentralized-identifiers--scids'
 ---
-
-<div class="usa-alert usa-alert--warning usa-alert--slim">
-  <div class="usa-alert__body">
-    <p class="usa-alert__text">
-      We are currently evaluating various options that use existing technologies and standards to implement and demonstrate a scalable approach that does not require a centralized "trust registry", changes to DNS infrastructure, changes to Certificate Authorities, or changes to browser trust store governance processes.
-    </p>
-  </div>
-</div>
 
 Transactions conducted on the web between entities are reliant on trusted introductions over widely available infrastructure. 
 
@@ -35,7 +27,7 @@ As a digital analogue to a written signature, a digital signature provides assur
 
 Signature generation uses a private key to generate a digital signature; signature verification uses a public key that corresponds to, but is not the same as, the private key. Each signatory possesses a private and public key pair. Public keys may be known by the public; private keys are kept secret. Anyone can verify the signature by employing the signatory’s public key. Only the entity that possesses the private key can perform signature generation.
 
-A public key infrastructure (PKI) is a framework that is established to issue, maintain and revoke the certificates. A Certificate Authority (CA) in a PKI is the entity responsible for issuing certificates that can be used for digital signature generation.
+A public key infrastructure (PKI) is a framework that is established to issue, maintain and revoke the certificates that can be used for digital signature generation. A Certificate Authority (CA) in a PKI is the entity responsible for issuing certificates.
 
 ### Domain Name System & DNSSEC
 
@@ -45,15 +37,21 @@ addresses and back.
 
 Domain Name System Security Extensions (DNSSEC) provide origin authentication and integrity protection for DNS data, as well as a means of public key distribution.
 
-## Decentralized Identifiers & SCIDs
+### Decentralized Identifiers & SCIDs
 
-Decentralized Identifiers (DIDs) are a type of identifier that enables the controller of a DID to prove control over it without requiring permission from any other party. DIDs associate an entity (DID Subject) with a set of set of data describing the entity (DID Document), including mechanisms such as public keys.
+Decentralized Identifiers (DIDs) are a type of identifier that enables an entity to prove control over it's DID without requiring permission from any other party. DIDs associate an entity (DID Subject) with a set of set of data describing the entity (DID Document), including mechanisms such as public keys.
 
 A Self-Certifying Identifier (SCID) is an identifier that is uniquely and cryptographically derived from the initial content of an identified object e.g. a DID Document, and forms some or all of the object identifier.
 
-Utilizing a SCID in a DID enables a set of features that allow for the implementation of critical features such as data integrity and pre-key-rotation, without sacrificing an entity's agency and control over its own identifer.      
+Using a SCID in a DID enables a set of features that allow for the implementation of useful and important functionality such as data integrity and pre-key-rotation, without sacrificing an entity's agency and control over its own identifier.      
 
 ## Using the Building Blocks
 
-...
+<div class="usa-alert usa-alert--warning usa-alert--slim">
+  <div class="usa-alert__body">
+    <p class="usa-alert__text">
+      We are currently evaluating various options that use these building blocks to implement and demonstrate a scalable approach to a web of public trust that does not require a centralized trust registry or public key directory, or changes to DNS infrastructure, Certificate Authorities, or browser trust store governance processes.
+    </p>
+  </div>
+</div>
 

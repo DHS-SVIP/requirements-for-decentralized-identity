@@ -15,6 +15,7 @@ subnav:
   - text: Normative References
     href: '#14-normative-references'
 ---
+
 ## Implementation Principles
 
 - Digital is not a requirement; it is a choice!
