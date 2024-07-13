@@ -4,6 +4,7 @@ layout: page
 permalink: /OrganizationCredential/
 
 sidenav: secondary
+sticky_sidenav: true
 subnav:
   - text: CBP/Trade Issuer
     href: '#21-cbptrade-issuer'

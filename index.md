@@ -37,7 +37,7 @@ The requirements span the use of [Personal Credentials]({{ site.baseurl }}/Perso
 
 ![Requirements for Personal and Supply Chain Credentials]({{ site.baseurl }}/assets/img/Requirements-Personal-SupplyChain.png)
 
-The [Web of Public Trust]({{ site.baseurl }}/WebPublicTrust/) section provides information on the technical building blocks used by DHS that enable trusted interactions on the web.
+The [Trust Architecture]({{ site.baseurl }}/TrustArchitecture/) section provides information on the technical building blocks used by DHS that enable trusted interactions on the web.
 
 The [Under Consideration]({{ site.baseurl }}/UnderConsideration/) section provides information on areas that are still TBD.
 
@@ -47,6 +47,6 @@ The [Under Consideration]({{ site.baseurl }}/UnderConsideration/) section provid
 | Date           |  Version  |
 |----------------|:---------:|
 | March 18, 2024 |   1.0.0   |
-| July 4, 2024   |   1.1.0   |
+| ?              |   1.1.0   |
 
-See Release Version Information for details.
+[More Information]({{ site.baseurl }}/CHANGELOG.html)

@@ -4,6 +4,7 @@ layout: page
 permalink: /UnderConsideration/
 
 sidenav: secondary
+sticky_sidenav: true
 subnav:
   - text: Issuance Protocol
     href: '#issuance-protocol-personal-credential'
@@ -19,7 +20,7 @@ subnav:
 <div class="usa-alert usa-alert--warning usa-alert--slim">
   <div class="usa-alert__body">
     <p class="usa-alert__text">
-      Following many-to-many, multi-vendor interoperability testing, DHS will update the requirements for issuance protocols
+      Following many-to-many, multi-party interoperability testing, DHS will update the requirements for issuance protocols
     </p>
   </div>
 </div>
@@ -41,7 +42,7 @@ subnav:
 <div class="usa-alert usa-alert--warning usa-alert--slim">
   <div class="usa-alert__body">
     <p class="usa-alert__text">
-      Following many-to-many, multi-vendor interoperability testing, DHS will update the requirements for exchange protocols
+      Following many-to-many, multi-party interoperability testing, DHS will update the requirements for exchange protocols
     </p>
   </div>
 </div>

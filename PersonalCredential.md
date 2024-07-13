@@ -5,6 +5,7 @@ layout: page
 permalink: /PersonalCredential/
 
 sidenav: secondary
+sticky_sidenav: true
 subnav:
   - text: Personal Credential Issuer
     href: '#11-dhs-personal-credential-issuer'
