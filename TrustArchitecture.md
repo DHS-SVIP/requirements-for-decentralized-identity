@@ -33,7 +33,7 @@ This trust architecture is built on a foundation of **trusted identifiers that a
   </div>
 </div>
 
-The technical building blocks that make such trusted introductions possible are:
+One set of technical building blocks that make such trusted introductions possible are:
 
 ![Trusted Introductions]({{ site.baseurl }}/assets/img/TrustedIntroductions.png)
 
@@ -42,9 +42,9 @@ The technical building blocks that make such trusted introductions possible are:
 
 As a digital analogue to a written signature, a digital signature provides assurances that the claimed signatory signed the information, and the information was not modified after signature generation.
 
-Signature generation uses a private key to generate a digital signature; signature verification uses a public key that corresponds to, but is not the same as, the private key. Each signatory possesses a private and public key pair. Public keys may be known by the public; private keys are kept secret. Anyone can verify the signature by employing the signatory’s public key. Only the entity that possesses the private key can perform signature generation.
+Signature generation uses a private cryptographic key to generate a digital signature; signature verification uses a public cryptographic key that corresponds to, but is not the same as, the private key. Each signatory possesses a private and public key pair. Public keys may be known by the public; private keys are kept secret. Anyone can verify the signature by employing the signatory’s public key. Only the entity that possesses the private key can perform signature generation.
 
-A public key infrastructure (PKI) is a framework that is established to issue, maintain and revoke the certificates that can be used for digital signature generation and verification. A Certificate Authority (CA) in a PKI is the entity responsible for issuing certificates.
+A public key infrastructure (PKI) is a framework that is established to issue, maintain and revoke public key certificates. A Certificate Authority (CA) in a PKI is the entity responsible for issuing certificates and exacting compliance with PKI policy.
 
 ### Domain Name System & DNSSEC
 
@@ -97,7 +97,7 @@ Much like the use of multi-factor authentication to provide a higher level of as
   </div>
 </div>
 
-- While the attestation could use a variety of data formats (VCDM, binary, JSON, mdoc, XML etc) & can be moved from point to point via a variety of transfer protocols (websocket, HTTPS, BLE, NFC, issuance and exchange protocols etc), we will focus on the attestation data formats and transfer protocols chosen in this requirements document
+- Attestations can use a variety of data formats (VCDM, binary, JSON, mdoc, XML etc) & can be moved from point to point via a variety of transfer protocols (websocket, HTTPS, BLE, NFC, issuance and exchange protocols etc). In this document, we we will focus on the attestation data formats and transfer protocols chosen to meet the DHS requirements.
 
 * * *
 The terminology and the descriptions of the building blocks are adapted from authoritative descriptions of the same by NIST, IETF and W3C. The concepts around linking DNS with DIDs were first articulated in the IETF Internet Draft “High Assurance DIDs with DNS” by J. Carter & J. Latour (CIRA), M. Glaude (Northern Block), T. Bouma (Digital Governance Council)
