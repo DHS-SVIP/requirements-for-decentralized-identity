@@ -23,17 +23,17 @@ Trusted introductions are done using identifiers that represent the entities.
 
 For high value transactions, confidence that the identifiers represent and are controlled by the entities participating in the transactions are a necessary first step.
 
-This trust architecture is built on a foundation of **trusted identifiers that are provider neutral, attestation data format neutral, and transfer protocol neutral.** 
-
 <div class="usa-alert usa-alert--info usa-alert--slim">
   <div class="usa-alert__body">
     <p class="usa-alert__text">
-      Trusted identifiers enable trusted introductions that support higher order capabilities such as verifiable attestations for use in high value digital transactions.
+      Trusted identifiers enable trusted introductions that support higher order capabilities, such as verifiable attestations, for use in high value digital transactions.
     </p>
   </div>
 </div>
 
-One set of technical building blocks that make such trusted introductions possible are:
+As such, this trust architecture is built on a foundation of **trusted identifiers that are provider neutral, attestation data format neutral, and transfer protocol neutral.** 
+
+A set of technical building blocks that make such trusted introductions possible are:
 
 ![Trusted Introductions]({{ site.baseurl }}/assets/img/TrustedIntroductions.png)
 
@@ -97,7 +97,7 @@ Much like the use of multi-factor authentication to provide a higher level of as
   </div>
 </div>
 
-- Attestations can use a variety of data formats (VCDM, binary, JSON, mdoc, XML etc) & can be moved from point to point via a variety of transfer protocols (websocket, HTTPS, BLE, NFC, issuance and exchange protocols etc). In this document, we we will focus on the attestation data formats and transfer protocols chosen to meet the DHS requirements.
+- Attestations can use a variety of data formats (VCDM, binary, JSON, mdoc, XML etc) & can be moved from point to point via a variety of transfer protocols (websocket, HTTPS, SCIM, BLE, NFC, issuance and exchange protocols etc). In this document, we we will focus on the attestation data format and transfer protocols chosen to meet the DHS requirements.
 
 * * *
 The terminology and the descriptions of the building blocks are adapted from authoritative descriptions of the same by NIST, IETF and W3C. The concepts around linking DNS with DIDs were first articulated in the IETF Internet Draft “High Assurance DIDs with DNS” by J. Carter & J. Latour (CIRA), M. Glaude (Northern Block), T. Bouma (Digital Governance Council)
