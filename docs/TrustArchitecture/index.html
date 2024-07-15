@@ -301,7 +301,7 @@
   </div>
 </div>
 
-<p>As such, this trust architecture is built on a foundation of <strong>trusted identifiers that are provider neutral, attestation data format neutral, and transfer protocol neutral.</strong></p>
+<p>As such, this trust architecture is built on a foundation of trusted identifiers that are provider neutral, attestation data format neutral, and transfer protocol neutral.</p>
 
 <p>A set of technical building blocks that make such trusted introductions possible are:</p>
 
@@ -325,7 +325,7 @@
 
 <h3 id="decentralized-identifiers">Decentralized Identifiers</h3>
 
-<p>Decentralized Identifiers (DIDs), a global standard from the World Wide Web Consortium (W3C), are a type of Uniform Resource Locator (URL) that is globally unique, highly available, and cryptographically verifiable with no required central authority. DIDs associate an entity (DID Subject) with metadata describing the entity (DID Document) and how to interact with it.</p>
+<p>Decentralized Identifiers (DIDs), a global standard from the World Wide Web Consortium (W3C), are a type of URI that is globally unique, highly available, and cryptographically verifiable with no required central authority. DIDs associate an entity (DID Subject) with metadata describing the entity (DID Document) and how to interact with it.</p>
 
 <p>The built-in capability to translate a DID to its DID Document enables useful and important functionality such as metadata and public key distribution, authentication, authorization, key rotation and more without those functions affecting the entity’s identifier.</p>
 
@@ -333,7 +333,7 @@
 
 <h3 id="motivation--constraints">Motivation &amp; Constraints</h3>
 
-<p>The capabilities implemented using the building blocks of this trust architecture must scale from an individual, to an organization, to a State, and ultimately to a Global context. It should enable participation by an entity in digital transactions without requiring a centralized trust registry or public key directory, new Certificate Authorities, changes to DNS infrastructure, or changes to browser trust store governance processes.</p>
+<p>The capabilities implemented using the building blocks of this trust architecture must scale from an individual, to an organization, to a State, and ultimately to a Global context. It should enable participation by an entity in digital transactions without requiring a centralized trust registry or public key directory, new CAs, changes to DNS infrastructure, or changes to browser trust store governance processes.</p>
 
 <h3 id="trusted-identifiers">Trusted identifiers</h3>
 
@@ -348,7 +348,7 @@
   <li>Registering and storing information in DNS, that in turn is protected by DNSSEC, to enhance the discoverability and ensure a binding between the DID and the domain owner</li>
 </ul>
 
-<p>Much like the use of multi-factor authentication to provide a higher level of assurance, the use of DNS and PKI, two independent, well established and authoritative infrastructures, enables a very <strong>high assurance ownership verification of the DID</strong> by demonstrating the same entity’s control over the Digital Signature Certificate, the DNS record, and the DID Document.</p>
+<p>Much like the use of multi-factor authentication to provide a higher level of assurance, the use of DNS and PKI, two independent, well established and authoritative infrastructures, <strong>enables a high assurance ownership verification of the DID</strong> by demonstrating the same entity’s control over the Digital Signature Certificate, the DNS record, and the DID Document.</p>
 
 <h4 id="implementation-process">Implementation Process</h4>
 
@@ -370,9 +370,7 @@
   </div>
 </div>
 
-<ul>
-  <li>Attestations can use a variety of data formats (VCDM, binary, JSON, mdoc, XML etc) &amp; can be moved from point to point via a variety of transfer protocols (websocket, HTTPS, SCIM, BLE, NFC, issuance and exchange protocols etc). In this document, we we will focus on the attestation data format and transfer protocols chosen to meet the DHS requirements.</li>
-</ul>
+<p>Attestations can use a variety of data formats (VCDM, binary, JSON, mdoc, XML etc) &amp; can be moved from point to point via a variety of transfer protocols (websocket, HTTPS, SCIM, BLE, NFC, issuance and exchange protocols etc). In this document, we we will focus on the attestation data format and transfer protocols chosen to meet DHS requirements.</p>
 
 <hr />
 <p>The terminology and the descriptions of the building blocks are adapted from authoritative descriptions of the same by NIST, IETF and W3C. The concepts around linking DNS with DIDs were first articulated in the IETF Internet Draft “High Assurance DIDs with DNS” by J. Carter &amp; J. Latour (CIRA), M. Glaude (Northern Block), T. Bouma (Digital Governance Council)</p>
