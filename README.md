@@ -34,9 +34,9 @@ The [Under Consideration](UnderConsideration.md) section provides information on
 
 ## Changelog
 
-| Date           |  Version  |
-|----------------|:---------:|
-| March 18, 2024 |   1.0.0   |
-| ?              |   1.1.0   |
+| Date             |  Version  |
+|------------------|:---------:|
+| March 18, 2024   |   1.0.0   |
+| Augusts 21, 2024 |   1.1.0   |
 
 [More Information](CHANGELOG.md)
