@@ -89,7 +89,7 @@ The implementation is a straightforward process:
 
 ### Verifiable attestations
 
-A compelling use of trusted identifiers is the capability is to “sign with my domain”. Simply put, your domain name, as a well-known website to your users, becomes a trusted identifier you can use to sign anything.
+A compelling use of trusted identifiers is the capability to “sign with my domain”. Simply put, your domain name, as a well-known website to your users, becomes a trusted identifier you can use to sign anything.
 
 “Sign with my domain”  provides an immediate benefit to domain name owners using domain name registrars and CAs to enable the implementation of trusted identifiers. It works regardless of whether they are a government organization or an individual - it works for everyone because this approach embraces the open web.
 
