@@ -44,9 +44,9 @@ The [Under Consideration]({{ site.baseurl }}/UnderConsideration/) section provid
 
 ## Changelog
 
-| Date           |  Version  |
-|----------------|:---------:|
-| March 18, 2024 |   1.0.0   |
-| ?              |   1.1.0   |
+| Date             |  Version  |
+|------------------|:---------:|
+| March 18, 2024   |   1.0.0   |
+| Augusts 21, 2024 |   1.1.0   |
 
 [More Information]({{ site.baseurl }}/CHANGELOG.html)

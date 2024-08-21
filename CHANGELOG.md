@@ -4,7 +4,7 @@ layout: page
 permalink: /CHANGELOG.html
 ---
 
-## [1.1.0] - ?
+## [1.1.0] - August 21, 2024
 
 ### Added
 

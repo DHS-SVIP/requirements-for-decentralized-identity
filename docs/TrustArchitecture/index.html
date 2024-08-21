@@ -53,7 +53,7 @@
               alt="DHS">
           
           <em class="usa-logo__text">
-            SVIP
+            CBP/USCIS/PRIV Technical Requirements
           </em>
         </a>
       </div>
@@ -369,17 +369,17 @@ With trusted identifiers, digital transactions can now be conducted between enti
 
 <p>For example, the .gov top level domain (TLD) is a globally recognized root of trust. The world does not question the authority of the usa.gov or usajobs.gov websites. Any posts, news releases, or job openings hosted on those sites have the full confidence that they are authentic and issued with the full authority of the U.S. Government (USG).</p>
 
-<p>Similarly, GSA’s PKI Shared Services Provider Program offers Digital Signature Certificate Services to help Agencies achieve digital signature interoperability.</p>
+<p>Similarly, an Agency’s internal PKI or GSA’s PKI Shared Services Provider Program offers Digital Signature Certificate Services to help Agencies achieve digital signature interoperability.</p>
 
-<p>In the current world of deep-fakes and inauthentic information, this DID-enabled “sign with my domain name” ability can extend the confidence of authority in the .gov TLD to the world of attestations such that they can be independently verified that it was issued by a USG entity using widely available standards-based mechanisms.</p>
+<p>This architecture uses this DID-enabled “sign with my domain name” capability to extend the confidence of authority in the .gov TLD to the world of attestations and credentials, such that they can be independently verified that it was issued by a USG entity using widely available standards-based mechanisms.</p>
 
-<p>An easily recognizable DID (e.g. did:web:agency.gov) could be used to sign official attestations such that they can be globally verified.</p>
+<p>An easily recognizable DID (e.g. did:web:agency.gov) shall be used to sign official attestations such that they can be globally verified.</p>
 
 <ul>
   <li>Attestations can use a variety of data formats (VCDM, binary, JSON, mdoc, XML etc) and can be moved from point to point via a variety of transfer protocols (websocket, HTTPS, SCIM, BLE, NFC, issuance and exchange protocols etc).</li>
 </ul>
 
-<p>However, this architecture will use attestation data formats, digital signature mechanisms, and transfer protocols chosen to meet DHS requirements for security, privacy and interoperability.</p>
+<p>This architecture <strong>SHALL use the attestation data formats, digital signature mechanisms, and transfer protocols chosen to meet DHS requirements for security, privacy and interoperability</strong> as it applies to personal and organizational attestations &amp; credentials.</p>
 
 <hr />
 <p>The terminology and the descriptions of the building blocks are adapted from authoritative descriptions of the same by NIST, IETF and W3C. The concepts around linking DNS with DIDs were first articulated in the IETF Internet Draft “High Assurance DIDs with DNS” by J. Carter &amp; J. Latour (CIRA), M. Glaude (Northern Block), T. Bouma (Digital Governance Council)</p>
