@@ -32,11 +32,4 @@ The [Trust Architecture](TrustArchitecture.md) section provides information on t
 
 The [Under Consideration](UnderConsideration.md) section provides information on areas that are still TBD.
 
-## Changelog
-
-| Date             |  Version  |
-|------------------|:---------:|
-| March 18, 2024   |   1.0.0   |
-| August 21, 2024  |   1.1.0   |
-
-[More Information](CHANGELOG.md)
+See [Changelog for version](CHANGELOG.md) information.
